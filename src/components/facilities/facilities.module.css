@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 80px;
+}
+.facilitiesContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.facilitiesContainer h1{
+    color:#F5B530;
+    margin-bottom: 15px;
+}
+.facilitiesContainer p{
+    color: #1e1e1e;
+    font-weight: 200;
+    font-size: 14px;
+}

@@ -1,0 +1,42 @@
+.container{
+    padding: 15px 30px;
+    display: flex;
+}
+.logoContainer{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.logoLeft{
+    margin-right: 15px;
+}
+.logoRight{
+    display: flex;
+    flex-direction: column;
+}
+.logoRight a{
+    color:#1E1E1E;
+    text-decoration: none;
+}
+.logoRight a:first-child{
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.logoRight a:last-child{
+    font-weight: 500;
+}
+.container nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 75%;
+    
+}
+.container nav ul{
+    list-style: none;
+    display: flex;
+}
+.container nav ul li{
+    margin-left: 30px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  
+}
+.left {
+    padding: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer{
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.imgContainer img{
+    width: 100%;
+    height:min-content;   
+    object-fit: fill;
+}
+.right {
+    padding: 80px;
+    width: 50%;
+    background-color: #155263;
+}
+
+.right h1{
+    color:#F5B530;
+    margin-bottom: 30px;
+}
+.right p{
+    color:#ffffff;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.right ul{
+    color:#ffffff;
+    list-style: none;
+    font-weight: 200;
+}
+.right ul li ul{
+    list-style: disc;
+    margin-left: 30px;
+}
