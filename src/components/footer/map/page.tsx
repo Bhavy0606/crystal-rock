@@ -24,7 +24,7 @@ export default function MyMap() {
             center:position,
             zoom:10,
             mapId:'crystal_rock_map',
-            styles:mapStyle
+            styles:mapStyle as any ,
         }
 
         const map=new Map(mapRef.current as HTMLDivElement,mapOptions);
