@@ -23,10 +23,10 @@ export default function MyMap() {
         const mapOptions:google.maps.MapOptions={
             center:position,
             zoom:10,
-            mapId:'crystal_rock_map',
+            
             styles:mapStyle as any ,
         }
-
+// mapId:'crystal_rock_map',
         const map=new Map(mapRef.current as HTMLDivElement,mapOptions);
     };
     initMap();
