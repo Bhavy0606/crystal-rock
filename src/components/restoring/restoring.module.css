@@ -1,46 +1,102 @@
 .container {
   display: flex;
-  
+  height: fit-content;
 }
 .left {
-    padding: 80px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 80px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.imgContainer{
-    width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+.imgContainer {
+  width: 100%;
+  max-height: 720px;
+  overflow: hidden;
 }
 
-.imgContainer img{
-    width: 100%;
-    height:min-content;   
-    object-fit: fill;
+.imgContainer img {
+  width: 100%;
+  height: min-content;
+  object-fit: fill;
 }
 .right {
-    padding: 80px;
-    width: 50%;
-    background-color: #155263;
+  padding: 80px;
+  width: 50%;
+  background-color: #155263;
 }
 
-.right h1{
-    color:#F5B530;
-    margin-bottom: 30px;
+.right h1 {
+  color: #f5b530;
+  margin-bottom: 30px;
 }
-.right p{
-    color:#ffffff;
-    font-weight: 200;
-    margin-bottom: 15px;
+.right p {
+  color: #ffffff;
+  font-weight: 200;
+  margin-bottom: 15px;
+  line-height: 24px;
 }
-.right ul{
-    color:#ffffff;
-    list-style: none;
-    font-weight: 200;
+.right ul {
+  color: #ffffff;
+  list-style: none;
+  font-weight: 200;
+  line-height: 24px;
 }
-.right ul li ul{
-    list-style: disc;
-    margin-left: 30px;
+.right ul li ul {
+  list-style: disc;
+  margin-left: 30px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1100px) {
+  .left {
+    width: 50%;
+    padding: 30px;
+  }
+  .imgContainer {
+    max-height: 720px;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .right h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    position: relative;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 45px;
+    background-color: rgba(21, 82, 99, 0.815);
+  }
+
+  .right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .right p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .right ul {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
 }

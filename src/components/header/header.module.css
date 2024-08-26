@@ -1,42 +1,127 @@
-.container{
-    padding: 15px 30px;
-    display: flex;
+.container {
+  padding: 15px 30px;
+  display: flex;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 15;
 }
-.logoContainer{
-    width: 25%;
-    display: flex;
-    align-items: center;
+.logoContainer {
+  width: 25%;
+  display: flex;
+  align-items: center;
 }
-.logoLeft{
-    margin-right: 15px;
+.logoLeft {
+  margin-right: 15px;
 }
-.logoRight{
-    display: flex;
+.logoRight {
+  display: flex;
+  flex-direction: column;
+}
+.logoRight a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.logoRight a:first-child {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.logoRight a:last-child {
+  font-weight: 500;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 75%;
+}
+.container nav ul {
+  list-style: none;
+  display: flex;
+}
+.container nav ul li {
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+.container nav ul li:hover {
+  color: #f5b530;
+}
+.menuBtn {
+  position: absolute;
+  display: none;
+  right: 40px;
+  top: 25px;
+}
+@media screen and (max-width: 1350px) {
+  .logoContainer {
+    width: 35%;
+  }
+  .logoLeft img {
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .logoRight a {
+    font-size: 12px;
+  }
+  .container nav {
+    width: 65%;
+  }
+  .container nav ul li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    position: fixed;
+  }
+  .logoContainer {
+    width: 100%;
+  }
+
+  .container nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 103px;
+    bottom: 0;
+    height: calc(100vh - 103px);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    transition: 1s;
+    display: none;
+  }
+  .container nav ul {
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
-}
-.logoRight a{
-    color:#1E1E1E;
-    text-decoration: none;
-}
-.logoRight a:first-child{
-    font-weight: 100;
-    margin-bottom: 5px;
-}
-.logoRight a:last-child{
-    font-weight: 500;
-}
-.container nav{
+  }
+  .container nav ul li {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+  }
+  .menuBtn {
+    display: block;
+    z-index: 11;
+  }
+  .container .openedNav {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 75%;
-    
-}
-.container nav ul{
-    list-style: none;
-    display: flex;
-}
-.container nav ul li{
-    margin-left: 30px;
-    text-transform: uppercase;
+    z-index: 11;
+    animation: animateNav 500ms ease-in 0s 1 forwards normal;
+  }
+  @keyframes animateNav {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }

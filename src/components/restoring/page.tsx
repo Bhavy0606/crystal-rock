@@ -6,11 +6,11 @@ export default function Restoring() {
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.imgContainer}>
-            <img src="/img/working.png" alt="Working Man" />
+            <img src="https://ik.imagekit.io/euo36lugk/crystal%20rock/working-man_AfoUYnRVJU.jpg?updatedAt=1724614540699" alt="Working Man" />
           </div>
         </div>
         <div className={styles.right}>
-          <h1>On your side,<br/>with unparalleled service.</h1>
+          <h1>On your side,<br />with unparalleled service.</h1>
           <p>
             We’re On Side Restoration. We’ve been expertly restoring damaged
             homes and businesses in Canada since 1979. Over 1,750 of the most
@@ -24,16 +24,16 @@ export default function Restoring() {
           </p>
           <ul>
             <li>Talk to us about:
-            <ul>
-            <li>Fire, Flood & Wind Damage</li>
-            <li>Hazardous Materials Remediation</li>
-            <li>Vandalism, Accident & Trauma Sites</li>
-            <li>Residential Restoration</li>
-            <li>Commercial Restoration</li>
-          </ul>
+              <ul>
+                <li>Fire, Flood & Wind Damage</li>
+                <li>Hazardous Materials Remediation</li>
+                <li>Vandalism, Accident & Trauma Sites</li>
+                <li>Residential Restoration</li>
+                <li>Commercial Restoration</li>
+              </ul>
             </li>
           </ul>
-          
+
         </div>
       </div>
     </>

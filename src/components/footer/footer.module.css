@@ -7,7 +7,8 @@
 }
 .learnMore p {
   color: #ffffff;
-  font-weight: 200;
+  font-weight: 300;
+  text-align: center;
 }
 /*
 */
@@ -52,5 +53,22 @@
 .copyrights {
   color: #979797;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .learnMore p {
+    font-size: 12px;
+  }
+
+  .footerContainer nav ul li {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  .socials img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
 }
